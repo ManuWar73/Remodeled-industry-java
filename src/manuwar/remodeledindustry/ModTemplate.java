@@ -1,8 +1,8 @@
-package sonnicon.modtemplate;
+package manuwar.remodeledindustry;
 
 import mindustry.mod.Mod;
 
-public class ModTemplate extends Mod{
+public class RemodeledIndustry extends Mod{
 
     @Override
     public void init(){
