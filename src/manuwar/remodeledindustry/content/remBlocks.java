@@ -45,6 +45,7 @@ public class remBlocks{
     //turrets
     public static puncher;
 
+public static void load() {
   puncher = new ItemTurret("puncher"){{
  requirements: (Category.turret, with(Items.copper, 500, Items.graphite, 360, Items.metaglass, 65, Items.phaseFabric, 65));
  reload = 1f;
@@ -61,4 +62,6 @@ public class remBlocks{
             shoot.type = ShootAlternate;
             shoot.barrels = 2;
             shoot.spread: 2;
-  }}
+  }};
+}
+}
