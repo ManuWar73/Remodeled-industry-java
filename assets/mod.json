@@ -4,7 +4,7 @@
   "author": "[#8738ff[]]ManuWar73[[]]",
   "description": "Remodeled industry(the hjson mod) Is going to port to java(Maybe this will take some months/years)",
   "version": "0",
-  "main": "sonnicon.modtemplate.ModTemplate",
+  "main": "manuwar.remodeledindustry.RemodeledIndustry",
   "minGameVersion": "138",
   "dependencies": [],
   "hidden": false,
