@@ -55,12 +55,10 @@ public class remBlocks{
             shoot.shotDelay = 1f;
 
             health = 140 * size * size;
-            shootSound = Sounds.plasmadrop;
-            heatColor = Pal.lancerLaser;
             shootY = 2f;
             coolant = consume(consumeCoolant(1f));
             coolantMultiplier = 0.4f;
-            shoot.type = ShootAlternate
-            shoot.barrels = 2
-            shoot.spread: 2
+            shoot.type = ShootAlternate;
+            shoot.barrels = 2;
+            shoot.spread: 2;
   }}
