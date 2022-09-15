@@ -40,6 +40,11 @@ import mindustry.world.blocks.storage.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
+@SuppressWarnings("deprecation")
+public class remBlocks{
+    //turrets
+    public static puncher;
+
   puncher = new ItemTurret("puncher"){{
  requirements: (Category.turret, with(Items.copper, 500, Items.graphite, 360, Items.metaglass, 65, Items.phaseFabric, 65));
  reload = 1f;
