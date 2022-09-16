@@ -4,13 +4,13 @@ import arc.graphics.*;
 import arc.graphics.g2d.*;
 import arc.struct.*;
 import arc.util.*;
-//import remodeledindustry.entities.bullet.*;
+import remodeledindustry.entities.bullet.*;
 //import remodeledindustry.graphics.*;
 //import remodeledindustry.type.*;
 //import remodeledindustry.world.blocks.campaign.*;
 //import remodeledindustry.world.blocks.defense.*;
-//import remodeledindustry.world.blocks.defense.turrets.*;
-//import remodeledindustry.world.blocks.defense.turrets.pattern.*;
+import remodeledindustry.world.blocks.defense.turrets.*;
+import remodeledindustry.world.blocks.defense.turrets.pattern.*;
 //import remodeledindustry.world.blocks.distribution.*;
 //import remodeledindustry.world.blocks.environment.*;
 //import remodeledindustry.world.blocks.logic.*;
@@ -52,7 +52,7 @@ public static void load() {
             range = 240f;
             recoil = 2f;
             size = 6;
-            shoot.shots = 2f;
+            shoot.shots = 2;
             shoot.shotDelay = 1f;
             health = 140 * size * size;
             shootY = 2f;
@@ -70,7 +70,6 @@ public static void load() {
             rotateSpeed = 10f;
             coolant = consumeCoolant(0.1f);
 
-            limitRange();
              ammo(
                 Items.surgeAlloy, new BasicBullet(4.5f, 13){{
                     ammoMultiplier = 5f;
