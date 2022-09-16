@@ -74,7 +74,7 @@ public static void load() {
                 Items.surgeAlloy, new basicBullet(50f){{
                     ammoMultiplier = 5f;
                     collidesGround = false;
-                }};
+                }},
             );
   }};
   }};
