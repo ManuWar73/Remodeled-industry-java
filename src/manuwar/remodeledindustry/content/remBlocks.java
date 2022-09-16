@@ -71,9 +71,8 @@ public static void load() {
             coolant = consumeCoolant(0.1f);
 
              ammo(
-                Items.surgeAlloy, new basicBullet(4.5f, 13){{
+                Items.surgeAlloy, new basicBullet(50f){{
                     ammoMultiplier = 5f;
-                    damage = 50f;
                     collidesGround = false;
                 }}
             );

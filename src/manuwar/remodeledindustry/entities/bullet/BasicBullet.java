@@ -12,7 +12,6 @@ import mindustry.gen.*;
 public class BasicBullet extends BulletType{
     public BasicBullet(float damage, float speed, float range, Color color){
         super(damage);
-        this.pierceDamage = pierceDamage;
         hitColor = trailColor = color;
         this.speed = speed;
         lifetime = range / speed;
