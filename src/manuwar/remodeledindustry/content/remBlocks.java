@@ -47,7 +47,8 @@ public class remBlocks{
 
 public static void load() {
   puncher = new ItemTurret("puncher"){{
- requirements = (Category.turret, with(Items.copper, 500, Items.graphite, 360, Items.metaglass, 65, Items.phaseFabric, 65));
+ requirements(Category.turret, with(Items.copper, 500, Items.graphite, 360, Items.metaglass, 65, Items.phaseFabric, 65));
+ 
  reload = 1f;
             range = 240f;
             recoil = 2f;
