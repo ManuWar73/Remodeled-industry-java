@@ -1,6 +1,7 @@
 package remodeledindustry.entities.bullet;
 //this code is taken from mindustry game source code.Why? Because i need basic bullet type without needing to import all mindustry bulletTypes
 
+import remodeledindustry.content*;
 import arc.*;
 import arc.graphics.*;
 import arc.graphics.g2d.*;
