@@ -24,7 +24,8 @@ basicBullet = new BasicBullet(50f){{
             hitColor = Pal.lancerLaser;
             trailSize = 8f;
             hitShake = 0f;
-            speed = 5f,
+            speed = 5f;
+            lifetime = 40
             
         }};
     }};

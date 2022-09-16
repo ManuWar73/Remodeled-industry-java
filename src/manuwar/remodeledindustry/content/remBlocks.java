@@ -62,7 +62,7 @@ public static void load() {
 
             shootY = 3f;
             reload = 20f;
-            range = 110;
+            range = 200;
             shootCone = 15f;
             ammoUseEffect = Fx.casing1;
             health = 250;
