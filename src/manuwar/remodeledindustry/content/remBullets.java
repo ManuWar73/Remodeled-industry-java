@@ -17,7 +17,7 @@ import mindustry.world.*;
 import static mindustry.Vars.world;
 
 public class remBullets{
-    public static BulletType ;
+    public static BulletType basicBullet;
 
     public static void load(){
 basicBullet = new BasicBullet(3.2f){{
