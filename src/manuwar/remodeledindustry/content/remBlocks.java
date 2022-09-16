@@ -65,29 +65,15 @@ public static void load() {
                 shotDelay = 5f;
             }};
              ammo(
-                Items.metaglass, new FlakBulletType(4f, 6){{
-                    ammoMultiplier = 2f;
-                    shootEffect = Fx.shootSmall;
-                    reloadMultiplier = 0.8f;
-                    width = 6f;
-                    height = 8f;
-                    hitEffect = Fx.flakExplosion;
-                    splashDamage = 45f;
-                    splashDamageRadius = 25f;
-                    fragBullet = new BasicBulletType(3f, 12, "bullet"){{
-                        width = 5f;
-                        height = 12f;
-                        shrinkY = 1f;
-                        lifetime = 20f;
-                        backColor = Pal.gray;
-                        frontColor = Color.white;
-                        despawnEffect = Fx.none;
-                    }};
-                    fragBullets = 4;
-                    explodeRange = 20f;
-                    collidesGround = true;
-                }};
-             )
+                Items.surgeAlloy, new BasicBulletType(4.5f, 13){{
+                    ammoMultiplier = 5f;
+                    damage = 50f;
+                    lightning = 2;
+                    lightningLength = 7;
+                    shootEffect = Fx.shootBig;
+                    collidesGround = false;
+                }}
+            );
   }};
  test = new ItemTurret("test"){{
  requirements(Category.turret, with(Items.copper, 500, Items.graphite, 360, Items.metaglass, 65, Items.phaseFabric, 65));
