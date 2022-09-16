@@ -43,7 +43,7 @@ import mindustry.world.meta.*;
 @SuppressWarnings("deprecation")
 public class remBlocks{
     //turrets
-    public static puncher, test;
+    public static Block puncher, test;
 
 public static void load() {
   puncher = new ItemTurret("puncher"){{
