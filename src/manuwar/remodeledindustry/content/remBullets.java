@@ -20,11 +20,11 @@ public class remBullets{
     public static BulletType basicBullet;
 
     public static void load(){
-basicBullet = new BasicBullet(3.2f){{
+basicBullet = new BasicBullet(50f){{
             hitColor = Pal.lancerLaser;
-            lifetime = 180f;
-            speed = 5f;
             trailSize = 8f;
             hitShake = 0f;
+            speed = 5f,
+            
         }};
     }};
