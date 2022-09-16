@@ -52,6 +52,8 @@ public static void load() {
             range = 240f;
             recoil = 2f;
             size = 6;
+            shoot.shots = 2f;
+            shoot.shotDelay = 1f;
             health = 140 * size * size;
             shootY = 2f;
             coolant = consume(consumeCoolant(1f));
@@ -64,19 +66,15 @@ public static void load() {
             shootCone = 15f;
             ammoUseEffect = Fx.casing1;
             health = 250;
-            shots = 2f;
-            shotDelay = 1f;
             inaccuracy = 0f;
             rotateSpeed = 10f;
             coolant = consumeCoolant(0.1f);
 
             limitRange();
              ammo(
-                Items.surgeAlloy, new BasicBulletType(4.5f, 13){{
+                Items.surgeAlloy, new BasicBullet(4.5f, 13){{
                     ammoMultiplier = 5f;
                     damage = 50f;
-                    lightning = 2;
-                    lightningLength = 7;
                     shootEffect = Fx.shootBig;
                     collidesGround = false;
                 }}
