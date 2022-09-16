@@ -9,8 +9,8 @@ import remodeledindustry.entities.bullet.*;
 //import remodeledindustry.type.*;
 //import remodeledindustry.world.blocks.campaign.*;
 //import remodeledindustry.world.blocks.defense.*;
-import remodeledindustry.world.blocks.defense.turrets.*;
-import remodeledindustry.world.blocks.defense.turrets.pattern.*;
+//import remodeledindustry.world.blocks.defense.turrets.*;
+//import remodeledindustry.world.blocks.defense.turrets.pattern.*;
 //import remodeledindustry.world.blocks.distribution.*;
 //import remodeledindustry.world.blocks.environment.*;
 //import remodeledindustry.world.blocks.logic.*;
@@ -71,7 +71,7 @@ public static void load() {
             coolant = consumeCoolant(0.1f);
 
              ammo(
-                Items.surgeAlloy, new BasicBullet(4.5f, 13){{
+                Items.surgeAlloy, new basicBullet(4.5f, 13){{
                     ammoMultiplier = 5f;
                     damage = 50f;
                     collidesGround = false;
