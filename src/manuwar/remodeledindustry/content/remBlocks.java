@@ -74,7 +74,6 @@ public static void load() {
                 Items.surgeAlloy, new BasicBullet(4.5f, 13){{
                     ammoMultiplier = 5f;
                     damage = 50f;
-                    shootEffect = Fx.shootBig;
                     collidesGround = false;
                 }}
             );
