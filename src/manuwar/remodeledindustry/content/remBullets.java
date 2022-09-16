@@ -25,7 +25,7 @@ basicBullet = new BasicBullet(50f){{
             trailSize = 8f;
             hitShake = 0f;
             speed = 5f;
-            lifetime = 40
+            lifetime = 40;
             
         }};
     }};
