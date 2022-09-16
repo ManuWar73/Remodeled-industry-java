@@ -47,21 +47,20 @@ public class remBlocks{
 
 public static void load() {
   puncher = new ItemTurret("puncher"){{
- requirements: (Category.turret, with(Items.copper, 500, Items.graphite, 360, Items.metaglass, 65, Items.phaseFabric, 65));
+ requirements = (Category.turret, with(Items.copper, 500, Items.graphite, 360, Items.metaglass, 65, Items.phaseFabric, 65));
  reload = 1f;
             range = 240f;
             recoil = 2f;
             size = 3;
             shoot.shots = 2;
             shoot.shotDelay = 1f;
-
             health = 140 * size * size;
             shootY = 2f;
             coolant = consume(consumeCoolant(1f));
             coolantMultiplier = 0.4f;
             shoot.type = ShootAlternate;
             shoot.barrels = 2;
-            shoot.spread: 2;
+            shoot.spread = 2;
   }};
 }
 }
