@@ -10,5 +10,7 @@ public class RemodeledIndustry extends Mod{
 
     @Override
     public void loadContent(){
+        remBlocks.load();
+        remBullets.load();
     }
 }
