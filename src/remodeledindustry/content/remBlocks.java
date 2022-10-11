@@ -1,4 +1,5 @@
 package remodeledindustry.content;
+import arc.graphics.g2d.TextureRegion.*;
 //import remodeledindustry.graphics.*;
 //import remodeledindustry.type.*;
 //import remodeledindustry.world.blocks.campaign.*;
@@ -56,6 +57,7 @@ public static void load() {
               Items.carbide, new BasicBullet(1f, 60f){{
 lifetime = 100;
 scaleLife = true;
+sprite = "ri-BasicBullet";
               }}
       );
   }};
