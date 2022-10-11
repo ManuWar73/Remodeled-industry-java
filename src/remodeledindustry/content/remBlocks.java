@@ -58,6 +58,7 @@ public static void load() {
 lifetime = 100;
 scaleLife = true;
 sprite = "ri-BasicBullet";
+spin = 5f;
               }}
       );
   }};
