@@ -1,5 +1,4 @@
 package remodeledindustry.content;
-
 //import remodeledindustry.graphics.*;
 //import remodeledindustry.type.*;
 //import remodeledindustry.world.blocks.campaign.*;
