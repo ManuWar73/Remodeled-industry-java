@@ -21,44 +21,43 @@ import mindustry.entities.pattern.*;
         import mindustry.type.*;
 import mindustry.world.*;
         import mindustry.world.blocks.defense.turrets.*;
-import remodeledindustry.content.remBullets.*;
 import remodeledindustry.entities.bullet.BasicBullet;
 
 import static mindustry.type.ItemStack.*;
 public class remBlocks{
     //turrets
-    public static Block puncher;
+    public static Block puncher, voider;
 
 public static void load() {
   puncher = new ItemTurret("puncher"){{
  requirements(Category.turret, with(Items.lead, 80, Items.graphite, 65, Items.titanium, 50));
-
- reload = 1f;
-            range = 240f;
             recoil = 2f;
             size = 6;
-            shoot.shots = 2;
-            shoot.shotDelay = 1f;
-            health = 140 * size * size;
-            shootY = 2f;
-            coolant = consume(consumeCoolant(1f));
             coolantMultiplier = 0.4f;
-            shoot = new ShootAlternate(3.5f);
+            shoot = new ShootAlternate(8f);
 
             shootY = 3f;
-            reload = 20f;
-            range = 200;
+            reload = 10f;
+            range = 160;
             shootCone = 15f;
             ammoUseEffect = Fx.casing1;
-            health = 250;
+            health = 100 * size * size;
             inaccuracy = 0f;
             rotateSpeed = 10f;
             coolant = consumeCoolant(0.1f);
 
              ammo(
-                Items.surgeAlloy, new BasicBulletType(1f, 50f){{
-                    lifetime = 40f;
+                Items.surgeAlloy, new BasicBulletType(4f, 50f){{
+                    lifetime = 40;
                 }}
             );
+  }};
+  voider = new ItemTurret("Voider"){{
+      ammo(
+              Items.carbide, new BasicBullet(1f, 60f){{
+lifetime = 100;
+scaleLife = true;
+              }}
+      );
   }};
   }}
