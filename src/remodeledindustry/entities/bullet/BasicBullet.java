@@ -1,8 +1,9 @@
 package remodeledindustry.entities.bullet;
 
+import mindustry.entities.bullet.BasicBulletType;
 import mindustry.entities.bullet.BulletType;
 
-public class BasicBullet extends BulletType {
+public class BasicBullet extends BasicBulletType{
     public BasicBullet(float speed, float damage) {
         super(speed, damage);
         hittable = absorbable = false;
