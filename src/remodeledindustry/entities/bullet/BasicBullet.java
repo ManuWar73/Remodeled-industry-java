@@ -14,4 +14,5 @@ public class BasicBullet extends BasicBulletType{
     public float continuousDamage(){
         return damage / 2f * 60f;
     }
+
 }

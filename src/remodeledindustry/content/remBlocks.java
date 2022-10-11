@@ -53,12 +53,20 @@ public static void load() {
             );
   }};
   voider = new ItemTurret("Voider"){{
+      range = 400;
+      size = 5;
+      minRange = 80;
       ammo(
               Items.carbide, new BasicBullet(1f, 60f){{
-lifetime = 100;
+lifetime = 400;
 scaleLife = true;
 sprite = "ri-BasicBullet";
 spin = 5f;
+height = 40;
+width = 40;
+frontColor = null;
+backColor = null;
+hitSize = 60;
               }}
       );
   }};
