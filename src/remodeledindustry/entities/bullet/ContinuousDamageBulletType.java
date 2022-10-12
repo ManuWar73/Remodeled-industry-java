@@ -25,8 +25,7 @@ public class ContinuousDamageBulletType extends ContinuousBulletType{
     public String sprite;
     public @Nullable String backSprite;
 
-    public @Nullable  TextureRegion backRegion;
-    public @Nullable TextureRegion frontRegion;
+
     @Override
     public void draw(Bullet b){
         super.draw(b);
@@ -38,15 +37,7 @@ public class ContinuousDamageBulletType extends ContinuousBulletType{
         Color mix = Tmp.c1.set(mixColorFrom).lerp(mixColorTo, b.fin());
 
         Draw.mixcol(mix, mix.a);
-
-        if(backRegion.found()){
-            Draw.color(backColor);
-            Draw.rect(backRegion, b.x, b.y, width, height, b.rotation() + offset);
-        }
-
-        Draw.color(frontColor);
-        Draw.rect(frontRegion, b.x, b.y, width, height, b.rotation() + offset);
-
         Draw.reset();
+
     }
 }
