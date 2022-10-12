@@ -65,8 +65,8 @@ sprite = "ri-BasicBullet";
 spin = 5f;
 height = 40;
 width = 40;
-frontColor = Color.black;
-backColor = Color.black;
+frontColor = Color.white;
+backColor = Color.white;
 hitSize = 60;
 drag = 0.5f;
               }}
