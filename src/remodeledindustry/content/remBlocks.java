@@ -22,7 +22,8 @@ import mindustry.entities.pattern.*;
         import mindustry.type.*;
 import mindustry.world.*;
         import mindustry.world.blocks.defense.turrets.*;
-import remodeledindustry.entities.bullet.BasicBullet;
+import remodeledindustry.entities.bullet.*;
+import remodeledindustry.entities.bullet.ContinuousDamageBulletType;
 
 import static mindustry.type.ItemStack.*;
 public class remBlocks{
@@ -31,7 +32,7 @@ public class remBlocks{
 
 public static void load() {
   puncher = new ItemTurret("puncher"){{
- requirements(Category.turret, with(Items.lead, 80, Items.graphite, 65, Items.titanium, 50));
+ requirements(Category.turret, with(Items.thorium, 80, Items.graphite, 65, Items.beryllium, 50));
             recoil = 2f;
             size = 6;
             coolantMultiplier = 0.4f;
@@ -59,7 +60,7 @@ public static void load() {
       minRange = 80;
       reload = 300;
       ammo(
-              Items.carbide, new BasicBullet(1f, 60f){{
+              Items.carbide, new ContinuousDamageBulletType(1f, 60f){{
 lifetime = 400;
 scaleLife = true;
 sprite = "ri-BasicBullet";
@@ -68,8 +69,10 @@ height = 40;
 width = 40;
 frontColor = Color.white;
 backColor = Color.white;
-hitSize = 60;
-drag = 0.003f;
+hitSize = 80;
+drag = 0.04f;
+shrinkX = 0;
+shrinkY = 0;
               }}
       );
   }};
