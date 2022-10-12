@@ -1,4 +1,5 @@
 package remodeledindustry.content;
+import arc.graphics.Color;
 import arc.graphics.g2d.TextureRegion.*;
 //import remodeledindustry.graphics.*;
 //import remodeledindustry.type.*;
@@ -64,9 +65,10 @@ sprite = "ri-BasicBullet";
 spin = 5f;
 height = 40;
 width = 40;
-frontColor = null;
-backColor = null;
+frontColor = Color.black;
+backColor = Color.black;
 hitSize = 60;
+drag = 0.5f;
               }}
       );
   }};
