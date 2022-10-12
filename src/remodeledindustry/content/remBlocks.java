@@ -57,6 +57,7 @@ public static void load() {
       range = 400;
       size = 5;
       minRange = 80;
+      reload = 300;
       ammo(
               Items.carbide, new BasicBullet(1f, 60f){{
 lifetime = 400;
@@ -68,7 +69,7 @@ width = 40;
 frontColor = Color.white;
 backColor = Color.white;
 hitSize = 60;
-drag = 0.5f;
+drag = 0.003f;
               }}
       );
   }};
