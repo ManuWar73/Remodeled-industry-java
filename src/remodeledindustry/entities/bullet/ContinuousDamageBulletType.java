@@ -25,8 +25,8 @@ public class ContinuousDamageBulletType extends ContinuousBulletType{
     public String sprite;
     public @Nullable String backSprite;
 
-    public TextureRegion backRegion;
-    public TextureRegion frontRegion;
+    public @Nullable  TextureRegion backRegion;
+    public @Nullable TextureRegion frontRegion;
     @Override
     public void draw(Bullet b){
         super.draw(b);
