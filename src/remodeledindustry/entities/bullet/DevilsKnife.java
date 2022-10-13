@@ -17,6 +17,9 @@ public class DevilsKnife extends BulletType {
     public Interp shrinkInterp = Interp.linear;
     public float spin = 0, rotationOffset = 0f;
     public String sprite;
+    public boolean hasColor = false;
+    public float lightOpacity = 0;
+    public float lightRadius = 0;
     public @Nullable String backSprite;
 
     public TextureRegion backRegion;
