@@ -28,7 +28,7 @@ import remodeledindustry.entities.bullet.ContinuousDamageBulletType;
 import static mindustry.type.ItemStack.*;
 public class remBlocks{
     //turrets
-    public static Block puncher, voider;
+    public static Block puncher, devilsknife;
 
 public static void load() {
   puncher = new ItemTurret("puncher"){{
@@ -54,25 +54,26 @@ public static void load() {
                 }}
             );
   }};
-  voider = new ItemTurret("Voider"){{
-      range = 400;
-      size = 5;
-      minRange = 80;
-      reload = 300;
+  devilsknife = new ItemTurret("Deltarune turret 1"){{
+requirements(Category.turret, with(Items.thorium, 500));
       ammo(
-              Items.carbide, new ContinuousDamageBulletType(1f, 60f){{
-lifetime = 400;
-scaleLife = true;
-sprite = "ri-BasicBullet";
-spin = 5f;
-height = 40;
-width = 40;
-frontColor = Color.white;
-backColor = Color.white;
-hitSize = 80;
-drag = 0.04f;
-shrinkX = 0;
-shrinkY = 0;
+              Items.thorium, new DevilsKnife(3f, 50f){{
+drag = 0.0083f;
+        lifetime = 120;
+        fragRandomSpread = 0;
+        fragAngle = 180;
+        fragBullets = 1;
+        sprite = "ri-devilsknife";
+        spin = 7.5f;
+        fragBullet = new DevilsKnife(3f, 50f){{
+            drag = 0.0083f;
+            lifetime = 120;
+            fragRandomSpread = 0;
+            fragAngle = 180;
+            fragBullets = 1;
+            sprite = "ri-devilsknife";
+            spin = 7.5f;
+        }};
               }}
       );
   }};
