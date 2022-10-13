@@ -69,7 +69,10 @@ drag = 0.0083f;
         fragVelocityMin = 3;
         height = 40;
         width = 40;
-        hasColor = false;
+                  hasColor = false;
+                  lightOpacity = 0;
+                  lightRadius = 0;
+
         fragBullet = new DevilsKnife(3f, 50f){{
             drag = 0.0083f;
             lifetime = 120;
@@ -78,6 +81,11 @@ drag = 0.0083f;
             fragBullets = 1;
             sprite = "ri-devilsknife";
             spin = 7.5f;
+            height = 40;
+            width = 40;
+            hasColor = false;
+            lightOpacity = 0;
+            lightRadius = 0;
         }};
               }}
       );
