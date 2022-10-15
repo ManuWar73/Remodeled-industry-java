@@ -67,11 +67,12 @@ shoot = new ShootBarrel(){{
 }};
       ammo(
               Items.thorium, new DevilsKnife(3f, 150f){{
-drag = 0.0083f;
+range = 340;
         lifetime = 120;
         fragRandomSpread = 0;
         fragAngle = 180;
         fragBullets = 1;
+        drag = 0.01f;
         fragOnHit = false;
         pierce = true;
         pierceCap = 10000;
@@ -84,9 +85,10 @@ drag = 0.0083f;
                   hasColor = false;
                   lightOpacity = 0;
                   lightRadius = 0;
+                  hitSize = 30;
 
         fragBullet = new DevilsKnife(3f, 200f){{
-            drag = 0.0083f;
+            drag = 0.001f;
             lifetime = 120;
             fragRandomSpread = 0;
             fragAngle = 180;
@@ -100,6 +102,7 @@ drag = 0.0083f;
             hasColor = false;
             lightOpacity = 0;
             lightRadius = 0;
+            hitSize = 30;
         }};
               }}
       );
