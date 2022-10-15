@@ -59,11 +59,11 @@ requirements(Category.turret, with(Items.thorium, 500));
 size = 5;
 health = 1000;
 reload = 300;
-shoot.shots = 4;
 shoot = new ShootBarrel(){{
     barrels = new float[] {
             0, 0, 0, 0, 0, 90, 0, 0, 180, 0, 0, 270
     };
+    shots = 4;
 }};
       ammo(
               Items.thorium, new DevilsKnife(3f, 50f){{
@@ -74,8 +74,8 @@ drag = 0.0083f;
         fragBullets = 1;
         sprite = "ri-devilsknife";
         spin = 7.5f;
-        fragVelocityMax = 0;
-        fragVelocityMin = 0;
+        fragVelocityMax = 0.1f;
+        fragVelocityMin = 0.1f;
         height = 40;
         width = 40;
                   hasColor = false;
