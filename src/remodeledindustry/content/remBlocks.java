@@ -58,7 +58,7 @@ public static void load() {
 requirements(Category.turret, with(Items.thorium, 500));
 size = 5;
 health = 1000;
-reload = 300;
+reload = 240;
 shoot = new ShootBarrel(){{
     barrels = new float[] {
             0, 0, 0, 0, 0, 90, 0, 0, 180, 0, 0, 270
@@ -66,28 +66,33 @@ shoot = new ShootBarrel(){{
     shots = 4;
 }};
       ammo(
-              Items.thorium, new DevilsKnife(3f, 50f){{
+              Items.thorium, new DevilsKnife(3f, 150f){{
 drag = 0.0083f;
         lifetime = 120;
         fragRandomSpread = 0;
         fragAngle = 180;
         fragBullets = 1;
+        fragOnHit = false;
+        pierce = true;
+        pierceCap = 10000;
         sprite = "ri-devilsknife";
         spin = 7.5f;
-        fragVelocityMax = 0.1f;
-        fragVelocityMin = 0.1f;
+        fragVelocityMax = 1f;
+        fragVelocityMin = 1f;
         height = 40;
         width = 40;
                   hasColor = false;
                   lightOpacity = 0;
                   lightRadius = 0;
 
-        fragBullet = new DevilsKnife(3f, 50f){{
+        fragBullet = new DevilsKnife(3f, 200f){{
             drag = 0.0083f;
             lifetime = 120;
             fragRandomSpread = 0;
             fragAngle = 180;
             fragBullets = 1;
+            pierce = true;
+            pierceCap = 10000;
             sprite = "ri-devilsknife";
             spin = 7.5f;
             height = 40;
