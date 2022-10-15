@@ -114,12 +114,12 @@ range = 340;
       {
           range = 400;
           ammo(
-                  Items.surgeAlloy, new BasicBulletType(400, 0) {{
+                  Items.surgeAlloy, new BasicBulletType(40, 0) {{
 splashDamage = 0;
 fragRandomSpread = 0;
-fragSpread = 51.4285714f;
-fragBullets = 7;
-lifetime = 1;
+fragSpread = 36;
+fragBullets = 10;
+lifetime = 10;
 scaleLife = true;
 fragVelocityMax = 1;
 fragVelocityMin = 1;
@@ -143,7 +143,7 @@ fragBullet = new BasicBulletType(20, 0){{
     fragLifeMin = 1;
     shrinkX = 0;
     shrinkY = 0;
-    fragBullet = new BasicBulletType(0.75f, 40){{
+    fragBullet = new BasicBulletType(0.5f, 40){{
         sprite = "ri-spear";
         lifetime = 120;
         height = 20;
