@@ -16,6 +16,7 @@ import arc.graphics.g2d.TextureRegion.*;
 //import remodeledindustry.world.blocks.storage.*;
 //import remodeledindustry.world.blocks.units.*;
 //import remodeledindustry.world.draw.*;
+import arc.math.Interp;
 import mindustry.content.*;
 import mindustry.entities.bullet.BasicBulletType;
 import mindustry.entities.bullet.PointBulletType;
@@ -121,9 +122,9 @@ fragSpread = 51.4285714f;
 fragBullets = 7;
 fragVelocityMax = 1;
 fragVelocityMin = 1;
-trailChance = 0;
-trailWidth = 0;
-trailLength = 0;
+trailInterp = Interp.linear;
+        fragLifeMin = 1;
+fragLifeMax = 1;
 fragBullet = new BasicBulletType(10, 0){{
     pierce = true;
     pierceCap = 10000;
@@ -135,6 +136,8 @@ fragBullet = new BasicBulletType(10, 0){{
     lifetime = 4;
     fragBullets = 1;
     fragAngle = 180;
+    fragLifeMax = 1;
+    fragLifeMin = 1;
     fragBullet = new BasicBulletType(0.75f, 40){{
         sprite = "ri-spear";
         lifetime = 60;
