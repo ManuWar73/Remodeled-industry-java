@@ -113,6 +113,8 @@ range = 340;
   spear = new ItemTurret("spear of justice"){
       {
           range = 400;
+          size = 5;
+          health = 100 * size * size;
           ammo(
                   Items.surgeAlloy, new BasicBulletType(40, 0) {{
 splashDamage = 0;
