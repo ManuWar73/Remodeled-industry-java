@@ -18,6 +18,8 @@ import arc.graphics.g2d.TextureRegion.*;
 //import remodeledindustry.world.draw.*;
 import mindustry.content.*;
 import mindustry.entities.bullet.BasicBulletType;
+import mindustry.entities.bullet.PointBulletType;
+import mindustry.entities.bullet.RailBulletType;
 import mindustry.entities.pattern.*;
         import mindustry.type.*;
 import mindustry.world.*;
@@ -28,7 +30,7 @@ import remodeledindustry.entities.bullet.ContinuousDamageBulletType;
 import static mindustry.type.ItemStack.*;
 public class remBlocks{
     //turrets
-    public static Block puncher, devilsknife;
+    public static Block puncher, devilsknife, spear;
 
 public static void load() {
   puncher = new ItemTurret("puncher"){{
@@ -107,4 +109,37 @@ range = 340;
               }}
       );
   }};
+  spear = new ItemTurret("spear of justice"){
+      {
+          range = 400;
+          ammo(
+                  Items.surgeAlloy, new PointBulletType() {{
+damage = 0;
+splashDamage = 0;
+fragRandomSpread = 0;
+fragSpread = 51.4285714f;
+fragBullets = 7;
+fragVelocityMax = 1;
+fragVelocityMin = 1;
+fragBullet = new BasicBulletType(40, 0){{
+    pierce = true;
+    pierceCap = 10000;
+    fragOnHit = false;
+    fragSpread = 0;
+    fragRandomSpread = 0;
+    fragVelocityMax = 1;
+    fragVelocityMin = 1;
+    lifetime = 1;
+    fragBullets = 1;
+    fragAngle = 180;
+    fragBullet = new BasicBulletType(1.5f, 40){{
+        sprite = "ri-spear";
+        lifetime = 60;
+        height = 20;
+        width = 20;
+    }};
+}};
+                  }}
+          );
+      }};
   }}
