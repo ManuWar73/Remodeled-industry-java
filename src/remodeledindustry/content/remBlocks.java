@@ -124,7 +124,6 @@ fragVelocityMin = 1;
 trailChance = 0;
 trailWidth = 0;
 trailLength = 0;
-trailEffect = null;
 fragBullet = new BasicBulletType(10, 0){{
     pierce = true;
     pierceCap = 10000;
