@@ -5,19 +5,19 @@ displayName: "Java Mod Template"
 name: "remodeled-ind"
 
 #your name
-author: "You"
+author: "ManuWar73"
 
 #the fully qualified main class of the mod
-main: "example.ExampleJavaMod"
+main: "remodeledindustry.RemodeledIndustry"
 
 #the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
+description: "A Mod centered in something with no center"
 
 #the mod version
 version: 1.0
 
 #the minimum game build required to run this mod
-minGameVersion: 140
+minGameVersion: 144
 
 #this is a java mod
 java: true
