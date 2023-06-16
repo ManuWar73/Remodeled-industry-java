@@ -8,7 +8,7 @@ name: "remodeled-ind"
 author: "ManuWar73"
 
 #the fully qualified main class of the mod
-main: "remodeledindustry.RemodeledIndustry"
+main: "remodeledindustry.Remodeledindustry"
 
 #the mod description as seen in the mod dialog
 description: "A Mod centered in something with no center"
