@@ -21,7 +21,7 @@ import mindustry.world.meta.BlockFlag;
 
 public class RemUnits {
     public static UnitType teeclipse, lspoly;
-    public void load(){
+    public static void load(){
         teeclipse = new UnitType("thousand-embers-eclipse"){{
             localizedName = "Thousand Embers Eclipse";
             speed = 0.74f;
