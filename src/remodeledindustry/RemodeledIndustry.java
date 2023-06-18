@@ -1,11 +1,13 @@
 package remodeledindustry;
 
 import mindustry.mod.Mod;
-import remodeledindustry.content.RemUnits;
+import remodeledindustry.content.*;
 
 public class RemodeledIndustry extends Mod{
 
     @Override
     public void loadContent(){
-        RemUnits.load();};
+        RemUnits.load();
+        RemTurrets.load();
+    };
 }
